@@ -17,7 +17,7 @@ export default function Skills() {
             desc: "Node FullStack Framework for modern and robust web applications",
         },
         {
-            name: "React JS",
+            name: "React",
             image: "https://api.iconify.design/logos:react.svg",
             desc: "JS Library for building UI web applications",
         },
@@ -38,7 +38,10 @@ export default function Skills() {
             <ul className="grid w-2/3 grid-cols-2"> 
                 {
                     listSkills.map((skill) => (
-                        <li key={ skill.name }>
+                        <li 
+                        key={ skill.name }
+                        date-choice={skill.name}
+                        onClick={() => setChoice(skill.name)}>
                             <img className="transition ease-in-out hover:scale-125"
                             src={ skill.image } 
                             alt={ skill.name + " logo "}

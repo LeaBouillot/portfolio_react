@@ -30,37 +30,37 @@ export default function Project({ prop }: Props) { // Ici, Props est issue de l'
     // Ici on type le tableau de données
     const listProjects: Project[] = [
         {
-            image: "https://placehold.it/400",
+            image: "https://via.placehoder.com/400/blue",
             name: "e-commerce Sneakers",
             desc: "E-commerce shop for Sneaker Family, a brand new operator of the best and most seeking sneakers in the world.",
             techno: ["All","Symfony","DevOps"],
         },
         {
-            image: "https://placehold.it/400",
+            image: "https://via.placeholder.com/400/green",
             name: "Blog Platform",
             desc: "A platform for bloggers to share their thoughts and ideas with the world.",
             techno: ["All","Adonis JS","React"],
         },
         {
-            image: "https://placehold.it/400",
+            image: "https://via.placeholder.com/400/pink",
             name: "Project Management Tool",
             desc: "A tool for managing projects, tasks, and teams.",
             techno: ["All","Symfony","React"],
         },
         {
-            image: "https://placehold.it/400",
+            image: "https://via.placeholder.com/400/green",
             name: "Automated Testing Platform",
             desc: "A platform for automating testing processes in software development.",
             techno: ["All","Adonis JS","DevOps"],
         },
         {
-            image: "https://placehold.it/400",
+            image: "https://via.placeholder.com/400/green",
             name: "Healthcare Management System",
             desc: "A system for managing patient records and healthcare services.",
             techno: ["All","Symfony","DevOps"],
         },
         {
-            image: "https://placehold.it/400",
+            image: "https://via.placeholder.com/400/green",
             name: "E-learning Platform",
             desc: "A platform for online learning and education.",
             techno: ["All","Adonis JS","React"],
