@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+BODY {
+    font-family: "Sen" sans-serif;
+}
