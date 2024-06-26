@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Project from "../components/project";
 
 export default function Skills() {
     //
