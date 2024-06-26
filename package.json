@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch"
-    //pr executer tailwin, pnpm tailwind et ecrit le chemin de input et output//chaque fois in faut pnpm run tailwind sur terminal
+
   },
   "dependencies": {
     "animate.css": "^4.1.1",
