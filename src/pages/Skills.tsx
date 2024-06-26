@@ -1,4 +1,10 @@
+import { useState } from "react";
+import Project from "../components/project";
+
 export default function Skills() {
+    //
+    const [choice, setChoice] = useState("All");
+    
     const listSkills = [
         {
             name: "Symfony",
@@ -22,7 +28,8 @@ export default function Skills() {
         },
     ]
     return (
-        <section className="flex gap-5 py-10">
+        <>
+        <section className="flex gap-5 px-5 py-10">
             <div className="w-1/3">
                 <h1 className="text-3xl font-bold text-white">Skillset</h1>
                 <p className="leading-relaxed text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
@@ -44,5 +51,9 @@ export default function Skills() {
                 }
             </ul>
         </section>
+        <section>
+            <Project prop = {choice} />
+        </section>
+        </>
     )
 }
