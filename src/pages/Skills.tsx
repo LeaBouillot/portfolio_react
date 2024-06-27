@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Project from "../components/project";
+import Project from "../components/Project";
 import Nav from "../components/Nav";
 /**
  * Skills:
