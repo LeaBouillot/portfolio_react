@@ -4,6 +4,7 @@ import "./styles.css";
 import "animate.css";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 // import Contact from "./pages/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <div>Contact</div>,
+    element: <Contact />,
   },
 ]);
 
