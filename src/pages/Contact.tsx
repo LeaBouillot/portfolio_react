@@ -4,19 +4,18 @@ import Nav from '../components/Nav';
  * Contact:
  * Composant pour afficher la page de contact
  * située sur la route : "/contact".
- * TODO: ajouter le formulaire de contact
  */
 export default function Contact() {
-    
-    const test =  () => {
-        console.log("test")
-    }
     
     return (
         <main>
             <Nav />
             <h1>Contact</h1>
-            <form className="pb-10 mx-auto min-w-1/3">
+            <form 
+                method="POST"
+                action="https://api.web3forms.com/submit"
+                className="pb-10 mx-auto min-w-1/3">
+                <input type="hidden" name="access_key" value="ae0807f3-c449-45b7-a257-12b3b8af8e79"></input>
                 <div className="">
                     <div className="pb-12 border-b border-gray-900/10">
                         <h2 className="text-base font-semibold leading-7">
@@ -38,7 +37,7 @@ export default function Contact() {
                                         id="subject"
                                         name="subject"
                                         autoComplete="subject-name"
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-gray-900 sm:max-w-xs sm:text-sm sm:leading-6"
                                     >
                                         <option>Meet me</option>
                                         <option>Hire me</option>
@@ -62,7 +61,7 @@ export default function Contact() {
                                             id="lastname"
                                             required
                                             autoComplete="lastname"
-                                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1  placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                                             placeholder="Smith"
                                         />
                                     </div>
@@ -83,7 +82,7 @@ export default function Contact() {
                                             id="firstname"
                                             required
                                             autoComplete="firstname"
-                                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1  placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                                             placeholder="Jane"
                                         />
                                     </div>
@@ -104,7 +103,7 @@ export default function Contact() {
                                             id="email"
                                             autoComplete="email"
                                             required
-                                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                            className="block flex-1 border-0 bg-transparent py-1.5 pl-1  placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                                             placeholder="jane@smith.com"
                                         />
                                     </div>
@@ -122,7 +121,7 @@ export default function Contact() {
                                         id="message"
                                         name="message"
                                         rows={3}
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 text-gray-900 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         defaultValue={''}
                                     />
                                 </div>
