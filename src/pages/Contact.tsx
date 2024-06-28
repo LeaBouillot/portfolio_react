@@ -15,7 +15,7 @@ export default function Contact() {
                 method="POST"
                 action="https://api.web3forms.com/submit"
                 className="pb-10 mx-auto min-w-1/3">
-                <input type="hidden" name="access_key" value="ae0807f3-c449-45b7-a257-12b3b8af8e79"></input>
+                <input type="hidden" name="access_key" value="1680f468-6fdb-46e3-a915-3dee5925815d"></input>
                 <div className="">
                     <div className="pb-12 border-b border-gray-900/10">
                         <h2 className="text-base font-semibold leading-7">
