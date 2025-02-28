@@ -19,20 +19,31 @@ export default function Skills() {
             desc: "Framework PHP for modern and robust web applications",
         },
         {
-            name: "Adonis JS",
-            image: "https://api.iconify.design/logos:adonisjs-icon.svg",
-            desc: "Node FullStack Framework for modern and robust web applications",
-        },
-        {
             name: "React",
             image: "https://api.iconify.design/logos:react.svg",
             desc: "JS Library for building UI web applications",
         },
         {
-            name: "DevOps",
-            image: "https://api.iconify.design/logos:git-icon.svg",
+            name: "MySQL",
+            image: "https://api.iconify.design/logos:mysql-icon.svg",
+            desc: "MySQL is a relational database management system.",
+        },
+     
+        {
+            name: "NodeJS",
+            image: "https://api.iconify.design/logos:nodejs-icon.svg",
             desc: "CI/CD with GitHub Action, VPS mounting and administration",
         },
+        // {
+        //     name: "Figma",
+        //     image: "https://api.iconify.design/logos:figma-icon.svg",
+        //     desc: "CI/CD with GitHub Action, VPS mounting and administration",
+        // },
+        // {
+        //     name: "Javascript",
+        //     image: "https://api.iconify.design/logos:javascript-icon.svg",
+        //     desc: "CI/CD with GitHub Action, VPS mounting and administration",
+        // },
     ]
     return (
         <main> 
@@ -40,8 +51,7 @@ export default function Skills() {
         <section className="flex gap-5 px-5 py-10">
             <div className="w-1/3">
                 <h1 className="mb-5 text-3xl font-bold text-white ">Skillset</h1>
-                <p className="leading-relaxed text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
-                numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
+                <p className="leading-relaxed text-slate-300">Compétences en JavaScript, React, Node.js, PHP, SQL, et Symfony. Mon expertise en développement est complétée par un titre RNCP de Web Designer, me permettant d'apporter une approche créative et visuelle au développement d'applications.</p>
             </div>
             <ul className="grid w-2/3 grid-cols-2"> 
                 {
@@ -56,7 +66,7 @@ export default function Skills() {
                             width={ 32 } 
                         />
                             <h3 className="text-lg font-semibold text-white">{ skill.name }</h3>
-                            <p className="text-slate-600">{ skill.desc }</p>
+                            <p className="text-slate-500">{ skill.desc }</p>
                         </li>
                     ))
                 }
